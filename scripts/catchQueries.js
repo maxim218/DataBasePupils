@@ -3,6 +3,7 @@
 import initDatabase from "./initDatabase";
 import addSubject from "./addSubject";
 import getSubject from "./getSubject";
+import getAllSubjects from "./getAllSubjects";
 
 export default function catchQueries(app, pg, fs) {
     app.get('/*', (request, response) => {
@@ -16,6 +17,11 @@ export default function catchQueries(app, pg, fs) {
 
         if(url === "/subjects/get") {
             getSubject(response, dictionary);
+            return null;
+        }
+
+        if(url === "/subjects/get/all") {
+            getAllSubjects(response, dictionary);
             return null;
         }
     });
