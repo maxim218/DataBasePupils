@@ -13,3 +13,12 @@ CREATE TABLE pupils
     nickname TEXT,
     age INTEGER
 );
+
+DROP TABLE IF EXISTS marks;
+CREATE TABLE marks
+(
+    mark_id SERIAL PRIMARY KEY,
+    nickname TEXT,
+    subject TEXT,
+    mark INTEGER
+);

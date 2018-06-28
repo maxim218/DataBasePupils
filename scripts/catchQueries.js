@@ -7,6 +7,7 @@ import getAllSubjects from "./getAllSubjects";
 import addPupil from "./addPupil";
 import getAllPupils from "./getAllPupils";
 import getPupilsNumber from "./getPupilsNumber";
+import addMark from "./addMark";
 
 export default function catchQueries(app, pg, fs) {
     app.get('/*', (request, response) => {
@@ -37,6 +38,14 @@ export default function catchQueries(app, pg, fs) {
             getPupilsNumber(response);
             return null;
         }
+
+        ////////////////////////////////////////////
+
+        response.end(JSON.stringify({
+            message: "QUERY_NOT_FOUND",
+        }));
+        // stop function
+        return null;
     });
 
     app.post('/*', (request, response) => {
@@ -76,6 +85,19 @@ export default function catchQueries(app, pg, fs) {
                 addPupil(response, bodyObj);
                 return null;
             }
+
+            if(request.url === "/marks/add") {
+                addMark(response, bodyObj);
+                return null;
+            }
+
+            ////////////////////////////////////////////
+
+            response.end(JSON.stringify({
+                message: "QUERY_NOT_FOUND",
+            }));
+            // stop function
+            return null;
         });
     });
 }
