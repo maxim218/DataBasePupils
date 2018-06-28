@@ -6,7 +6,7 @@ export default function addSubject(response, bodyObj) {
     const subject = bodyObj.subject;
     const description = bodyObj.description;
 
-    makeQuery("SELECT subject, description FROM subjects WHERE subject = '" + subject + "';", (arr) => {
+    makeQuery("SELECT subject, description FROM subjects WHERE subject = '" + subject + "' LIMIT 1;", (arr) => {
        if(arr.length > 0) {
            const ans = arr[0];
            response.end(JSON.stringify(ans));
