@@ -8,6 +8,7 @@ import addPupil from "./addPupil";
 import getAllPupils from "./getAllPupils";
 import getPupilsNumber from "./getPupilsNumber";
 import addMark from "./addMark";
+import getMarks from "./getMarks";
 
 export default function catchQueries(app, pg, fs) {
     app.get('/*', (request, response) => {
@@ -36,6 +37,11 @@ export default function catchQueries(app, pg, fs) {
 
         if(url === "/pupils/get/count") {
             getPupilsNumber(response);
+            return null;
+        }
+
+        if(url === "/marks/get") {
+            getMarks(response, dictionary);
             return null;
         }
 
