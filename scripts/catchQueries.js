@@ -5,6 +5,7 @@ import addSubject from "./addSubject";
 import getSubject from "./getSubject";
 import getAllSubjects from "./getAllSubjects";
 import addPupil from "./addPupil";
+import getAllPupils from "./getAllPupils";
 
 export default function catchQueries(app, pg, fs) {
     app.get('/*', (request, response) => {
@@ -23,6 +24,11 @@ export default function catchQueries(app, pg, fs) {
 
         if(url === "/subjects/get/all") {
             getAllSubjects(response, dictionary);
+            return null;
+        }
+
+        if(url === "/pupils/get/all") {
+            getAllPupils(response, dictionary);
             return null;
         }
     });
@@ -46,7 +52,6 @@ export default function catchQueries(app, pg, fs) {
                 response.end(JSON.stringify({
                     message: "JSON_ERROR",
                 }));
-
                 // stop function
                 return null;
             }
