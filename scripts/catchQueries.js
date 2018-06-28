@@ -4,6 +4,7 @@ import initDatabase from "./initDatabase";
 import addSubject from "./addSubject";
 import getSubject from "./getSubject";
 import getAllSubjects from "./getAllSubjects";
+import addPupil from "./addPupil";
 
 export default function catchQueries(app, pg, fs) {
     app.get('/*', (request, response) => {
@@ -37,15 +38,31 @@ export default function catchQueries(app, pg, fs) {
         }).on('end', () => {
             console.log("Body: " + body);
 
-            const bodyObj = JSON.parse(body);
+            let bodyObj = undefined;
+
+            try {
+                bodyObj = JSON.parse(body);
+            } catch (err) {
+                response.end(JSON.stringify({
+                    message: "JSON_ERROR",
+                }));
+
+                // stop function
+                return null;
+            }
 
             if(request.url === "/database/clear") {
                 initDatabase(pg, fs, response);
                 return null;
             }
 
-            if(request.url = "/subjects/add") {
+            if(request.url === "/subjects/add") {
                 addSubject(response, bodyObj);
+                return null;
+            }
+
+            if(request.url === "/pupils/add") {
+                addPupil(response, bodyObj);
                 return null;
             }
         });

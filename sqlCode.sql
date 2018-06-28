@@ -5,3 +5,11 @@ CREATE TABLE subjects
     subject TEXT,
     description TEXT
 );
+
+DROP TABLE IF EXISTS pupils;
+CREATE TABLE pupils
+(
+    pupil_id SERIAL PRIMARY KEY,
+    nickname TEXT,
+    age INTEGER
+);
