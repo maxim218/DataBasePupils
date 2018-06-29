@@ -1,6 +1,8 @@
 # База данных: Предметы, Студенты, Оценки
 
-Запуск: npm start
+Запуск: 
+> npm start
 
-Тестирование: npm run database
+Тестирование: 
+> npm run database
 
