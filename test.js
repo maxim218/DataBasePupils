@@ -736,7 +736,379 @@ let mainArr = [
         }
     },
 
+    {
+        type: "GET",
+        url: "/marks/get?nickname=Maxim&subject=mathematics&sort=1",
+        answer: [
+            {
+                mark: 5,
+            },
+            {
+                mark: 5,
+            },
+            {
+                mark: 3,
+            },
+            {
+                mark: 3,
+            },
+            {
+                mark: 4,
+            },
+            {
+                mark: 4,
+            },
+        ]
+    },
 
+    {
+        type: "GET",
+        url: "/marks/get?nickname=Maxim&subject=mathematics&sort=0",
+        answer: [
+            {
+                mark: 4,
+            },
+            {
+                mark: 4,
+            },
+            {
+                mark: 3,
+            },
+            {
+                mark: 3,
+            },
+            {
+                mark: 5,
+            },
+            {
+                mark: 5,
+            },
+        ]
+    },
+
+    {
+        type: "GET",
+        url: "/marks/get?nickname=Maxim&subject=english_language&sort=1",
+        answer: [
+            {
+                mark: 4,
+            },
+            {
+                mark: 5,
+            },
+            {
+                mark: 5,
+            },
+            {
+                mark: 4,
+            },
+        ]
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Maxim",
+            subject: "english_language",
+            mark: 4,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "GET",
+        url: "/marks/get?nickname=Maxim&subject=english_language&sort=1",
+        answer: [
+            {
+                mark: 4,
+            },
+            {
+                mark: 5,
+            },
+            {
+                mark: 5,
+            },
+            {
+                mark: 4,
+            },
+            {
+                mark: 4,
+            },
+        ]
+    },
+
+    {
+        type: "GET",
+        url: "/marks/get?nickname=Maxim&subject=english_language&sort=0",
+        answer: [
+            {
+                mark: 4,
+            },
+            {
+                mark: 4,
+            },
+            {
+                mark: 5,
+            },
+            {
+                mark: 5,
+            },
+            {
+                mark: 4,
+            },
+        ]
+    },
+
+    {
+        type: "GET",
+        url: "/marks/get?nickname=Maxim&subject=russian_language&sort=1",
+        answer: [],
+    },
+
+    {
+        type: "GET",
+        url: "/marks/get?nickname=Maxim&subject=russian_language&sort=0",
+        answer: [],
+    },
+
+    {
+        type: "GET",
+        url: "/marks/get?nickname=Ann&subject=russian_language&sort=1",
+        answer: [
+            {
+                mark: 4,
+            },
+            {
+                mark: 4,
+            },
+            {
+                mark: 4,
+            },
+        ],
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Ann",
+            subject: "russian_language",
+            mark: 2,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "GET",
+        url: "/marks/get?nickname=Ann&subject=russian_language&sort=1",
+        answer: [
+            {
+                mark: 4,
+            },
+            {
+                mark: 4,
+            },
+            {
+                mark: 4,
+            },
+            {
+                mark: 2,
+            },
+        ],
+    },
+
+    {
+        type: "GET",
+        url: "/marks/get?nickname=Ann&subject=russian_language&sort=0",
+        answer: [
+            {
+                mark: 2,
+            },
+            {
+                mark: 4,
+            },
+            {
+                mark: 4,
+            },
+            {
+                mark: 4,
+            },
+        ],
+    },
+
+    {
+        type: "GET",
+        url: "/marks/get?nickname=Ann&subject=mathematics&sort=1",
+        answer: [
+            {
+                mark: 2,
+            },
+            {
+                mark: 3,
+            },
+            {
+                mark: 2,
+            },
+            {
+                mark: 3,
+            },
+            {
+                mark: 2,
+            },
+        ],
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Ann",
+            subject: "mathematics",
+            mark: 5,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Ann",
+            subject: "mathematics",
+            mark: 5,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Ann",
+            subject: "mathematics",
+            mark: 5,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "GET",
+        url: "/marks/get?nickname=Ann&subject=mathematics&sort=1",
+        answer: [
+            {
+                mark: 2,
+            },
+            {
+                mark: 3,
+            },
+            {
+                mark: 2,
+            },
+            {
+                mark: 3,
+            },
+            {
+                mark: 2,
+            },
+            {
+                mark: 5,
+            },
+            {
+                mark: 5,
+            },
+            {
+                mark: 5,
+            },
+        ],
+    },
+
+    {
+        type: "GET",
+        url: "/marks/get?nickname=Ann&subject=mathematics&sort=0",
+        answer: [
+            {
+                mark: 5,
+            },
+            {
+                mark: 5,
+            },
+            {
+                mark: 5,
+            },
+            {
+                mark: 2,
+            },
+            {
+                mark: 3,
+            },
+            {
+                mark: 2,
+            },
+            {
+                mark: 3,
+            },
+            {
+                mark: 2,
+            },
+        ],
+    },
+
+    {
+        type: "POST",
+        url: "/database/clear",
+        body: {},
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/pupils/add",
+        body: {
+            nickname: "George",
+            age: 12,
+        },
+        answer: {
+            result: "OK"
+        }
+    },
+
+    {
+        type: "GET",
+        url: "/pupils/get/count",
+        answer: {
+            count: 1,
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/database/clear",
+        body: {},
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "GET",
+        url: "/pupils/get/count",
+        answer: {
+            count: 0,
+        }
+    },
 ];
 
 /////////////////////////////////////////////////////////////////
@@ -757,7 +1129,7 @@ function main() {
                     equalArrays(query.answer, JSON.parse(result));
                     console.log("Test OK");
                     wait = false;
-                } else{
+                } else {
                     equalObjects(query.answer, JSON.parse(result));
                     console.log("Test OK");
                     wait = false;
@@ -782,7 +1154,7 @@ function main() {
                    equalArrays(query.answer, JSON.parse(result));
                    console.log("Test OK");
                    wait = false;
-               } else{
+               } else {
                    equalObjects(query.answer, JSON.parse(result));
                    console.log("Test OK");
                    wait = false;
