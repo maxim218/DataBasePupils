@@ -382,6 +382,361 @@ let mainArr = [
             count: 5,
         }
     },
+
+    {
+        type: "GET",
+        url: "/pupils/get/all?sort=1",
+        answer: [
+            {
+                nickname: "Maxim",
+                age: 21,
+            },
+            {
+                nickname: "Nina",
+                age: 18,
+            },
+            {
+                nickname: "Alex",
+                age: 17,
+            },
+            {
+                nickname: "Peter",
+                age: 14,
+            },
+            {
+                nickname: "Ann",
+                age: 24,
+            }
+        ]
+    },
+
+    {
+        type: "GET",
+        url: "/pupils/get/all?sort=0",
+        answer: [
+            {
+                nickname: "Ann",
+                age: 24,
+            },
+            {
+                nickname: "Peter",
+                age: 14,
+            },
+            {
+                nickname: "Alex",
+                age: 17,
+            },
+            {
+                nickname: "Nina",
+                age: 18,
+            },
+            {
+                nickname: "Maxim",
+                age: 21,
+            },
+        ]
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Maxim",
+            subject: "mathematics",
+            mark: 5,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Maxim",
+            subject: "mathematics",
+            mark: 5,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Maxim",
+            subject: "mathematics",
+            mark: 3,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Maxim",
+            subject: "mathematics",
+            mark: 3,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Maxim",
+            subject: "mathematics",
+            mark: 4,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Maxim",
+            subject: "mathematics",
+            mark: 4,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Maxim",
+            subject: "english_language",
+            mark: 4,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Maxim",
+            subject: "english_language",
+            mark: 5,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Maxim",
+            subject: "english_language",
+            mark: 5,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Maxim",
+            subject: "english_language",
+            mark: 4,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Ann",
+            subject: "russian_language",
+            mark: 4,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Ann",
+            subject: "russian_language",
+            mark: 4,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Ann",
+            subject: "russian_language",
+            mark: 4,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Ann",
+            subject: "mathematics",
+            mark: 2,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Ann",
+            subject: "mathematics",
+            mark: 3,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Ann",
+            subject: "mathematics",
+            mark: 2,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Ann",
+            subject: "mathematics",
+            mark: 3,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Ann",
+            subject: "mathematics",
+            mark: 2,
+        },
+        answer: {
+            result: "OK",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "George",
+            subject: "mathematics",
+            mark: 4,
+        },
+        answer: {
+            result: "BAD_NICKNAME_OR_SUBJECT",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Bill",
+            subject: "mathematics",
+            mark: 4,
+        },
+        answer: {
+            result: "BAD_NICKNAME_OR_SUBJECT",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Nina",
+            subject: "history",
+            mark: 4,
+        },
+        answer: {
+            result: "BAD_NICKNAME_OR_SUBJECT",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "Peter",
+            subject: "history",
+            mark: 4,
+        },
+        answer: {
+            result: "BAD_NICKNAME_OR_SUBJECT",
+        }
+    },
+
+    {
+        type: "POST",
+        url: "/marks/add",
+        body: {
+            nickname: "George",
+            subject: "history",
+            mark: 4,
+        },
+        answer: {
+            result: "BAD_NICKNAME_OR_SUBJECT",
+        }
+    },
+
+
 ];
 
 /////////////////////////////////////////////////////////////////
