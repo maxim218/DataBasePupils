@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prestart": "webpack",
-    "start": "node index.js"
+    "start": "node index.js",
+    "database": "node test.js"
   },
   "keywords": [],
   "author": "",
@@ -15,8 +16,10 @@
     "express": "^4.16.3",
     "fs": "0.0.1-security",
     "http": "0.0.0",
+    "http-get": "^0.5.10",
     "http-post": "^0.1.1",
     "pg": "^6.1.0",
+    "request": "^2.87.0",
     "webpack": "^3.5.0"
   }
 }
